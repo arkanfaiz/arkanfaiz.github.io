@@ -16,7 +16,7 @@
 }
 
 .navbar-container h1 {
-    font-size: 5vh;
+    font-size: 3.5vh;
     color: #7E1514;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .navbar-container ul li a {
-    font-size: 3vh;
+    font-size: 2vh;
     color: #7E1514;
     text-decoration: none;
 }
@@ -52,6 +52,7 @@
     color: #E7DB00;
 }
 
+
 /* End-Navbar */
 
 /* Main  */
@@ -68,7 +69,9 @@
     justify-content: center; 
     margin: auto;
     color: #7E1514;
+    font-size: 3vh;
 }
+
 
 #content .container aside {
     width : 32%;
@@ -78,7 +81,7 @@
 }
 
 .container aside .riwayat-pendidikan h1 {
-    font-size: 2.5vh;
+    font-size: 2vh;
     color: #7E1514;
     text-align: center;
     margin-bottom: 1rem;
@@ -106,7 +109,7 @@
 
 .deskripsi-smp {
     width: 75%;
-    font-size: 1.7vh;
+    font-size: 1vh;
     justify-content: center;
     align-items: center;
     margin: 10px 3px;
@@ -137,7 +140,7 @@
 
 .deskripsi-sma {
     width: 75%;
-    font-size: 1.7vh;
+    font-size: 1vh;
     justify-content: center;
     align-items: center;
     margin: 10px px;
@@ -168,7 +171,7 @@
 
 .deskripsi-unpam {
     width: 75%;
-    font-size: 1.7vh;
+    font-size: 1vh;
     justify-content: center;
     align-items: center;
     margin: 10px 3px;
@@ -183,7 +186,7 @@
     border-bottom: none;
     border-right: none;
     height: 5vh; 
-    margin-left: 8.4vh; 
+    margin-left: 5.5vh; 
 }
 
 .garis-kanan {
@@ -221,14 +224,15 @@
 }
 
 .container .content .pengalaman h1 {
-    font-size: 5vh;
+    font-size: 2.5vh;
     color: #7E1514;
     text-align: center;
     margin-bottom: 1rem;
 }
 
 .list-pengalaman {
-    line-height: 5vh;
+    line-height: 4vh;
+    font-size: 1.5vh;
 }
 
 .dalem {
@@ -243,25 +247,25 @@
 
 /* footer */
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-wrap: wrap;
     text-align: center;
-    margin-top: 3rem;
     padding: 1rem;
     background-color: #7E1514;
     color: #E7DB00;
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
-    left: 0;
-    bottom: 0;
-    width: 100%;
 }
 
 
 footer p {
-    font-size: 2.5vh;
+    margin-left: 2rem;
+    font-size: 1.5vh;
     background-color: transparent;
 }
 /* End-Footer */
