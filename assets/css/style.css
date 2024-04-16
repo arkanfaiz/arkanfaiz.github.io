@@ -15,7 +15,7 @@
 }
 
 .navbar-container h1 {
-    font-size: 5vh;
+    font-size: 3.5vh;
     color: #7E1514;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .navbar-container ul li a {
-    font-size: 3vh;
+    font-size: 2vh;
     color: #7E1514;
     text-decoration: none;
 }
@@ -62,10 +62,11 @@ main {
     gap: 2rem;
     justify-content: center;
     align-items: center;
+    margin-top: 10vh;
 }
 
 main #content .image img {
-    width: 37vh;
+    width: 25vh;
     height: auto;
     object-fit: cover;
     display: flex;
@@ -77,20 +78,20 @@ main #content .image img {
 
 .deskripsi {
     text-align: center;
-    width: 110vh;
+    width: 100%;
     text-wrap: wrap;
     margin: 0.5rem ;
 }
 
 .deskripsi h3 {
-    font-size: 3vh;
+    font-size: 2vh;
     margin-top: 1.5rem;
     color: #E7DB00;
 }
 
 .deskripsi h2 {
     color: #7E1514;
-    font-size: 5vh;
+    font-size: 3vh;
     line-height: 2rem;
     padding-bottom: 1rem;
     margin-top: 1rem;
@@ -101,11 +102,11 @@ main #content .image img {
     line-height: 1.5rem;
     padding-bottom: 2rem;
     text-wrap: wrap;
-    font-size: 2.3vh;
+    font-size: 1.5vh;
 }
 
 .deskripsi button {
-    width: 100%;
+    width: 80%;
     padding: 10px 20px;
     border-radius: 30px 3px 30px 3px;
     border: none;
@@ -147,7 +148,7 @@ main #content .image img {
 }
 
 .kontak .social-icon li a{
-    font-size: 5vh;
+    font-size: 3vh;
     color: #7E1514;
     display: flex;
     transition: 0.5s;
@@ -184,12 +185,14 @@ main #content .image img {
 
 /* footer */
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-wrap: wrap;
     text-align: center;
-    margin-top: 3rem;
     padding: 1rem;
     background-color: #7E1514;
     color: #E7DB00;
@@ -200,7 +203,7 @@ footer {
 
 footer p {
     margin-left: 2rem;
-    font-size: 2.5vh;
+    font-size: 1.5vh;
     background-color: transparent;
 }
 
