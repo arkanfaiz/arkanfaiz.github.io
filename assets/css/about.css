@@ -1,0 +1,267 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #E2F4C5;
+    /* border: 1px solid red; */
+}
+
+/* Navbar */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+}
+
+.navbar-container h1 {
+    font-size: 5vh;
+    color: #7E1514;
+}
+
+.navbar-container ul {
+    display: flex;
+    gap : 2rem;
+    justify-content: flex-end;
+}
+
+.navbar-container ul li {
+    list-style: none;
+    font-weight :normal;
+}
+
+.navbar-container ul li a {
+    font-size: 3vh;
+    color: #7E1514;
+    text-decoration: none;
+}
+
+.navbar-container ul li:hover{
+    font-size: 1rem;
+    transform: translateY(-4px);
+    color: #E7DB00;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navbar-container ul li a:hover{
+    color: #E7DB00;
+}
+
+/* End-Navbar */
+
+/* Main  */
+.container {
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#content .judul h1 {
+    display: flex;
+    justify-content: center; 
+    margin: auto;
+    color: #7E1514;
+}
+
+#content .container aside {
+    width : 32%;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container aside .riwayat-pendidikan h1 {
+    font-size: 2.5vh;
+    color: #7E1514;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* smp */
+
+.pendidikan .smp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 3px;
+    padding: auto;
+}
+
+.smp img {
+    width: 15%;
+    height: auto;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+}
+
+.deskripsi-smp {
+    width: 75%;
+    font-size: 1.7vh;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 3px;
+    padding: auto;
+}
+
+/* end-smp  */
+
+/* sma  */
+
+.pendidikan .sma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 3px;
+    padding: auto;
+}
+
+.sma img {
+    width: 12.5%;
+    height: auto;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+}
+
+.deskripsi-sma {
+    width: 75%;
+    font-size: 1.7vh;
+    justify-content: center;
+    align-items: center;
+    margin: 10px px;
+    padding: auto;
+}
+
+/* end-sma  */
+
+/* unpam  */
+
+.pendidikan .kuliah {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 3px;
+    padding: auto;
+}
+
+.kuliah img {
+    width: 16%;
+    height: auto;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+}
+
+.deskripsi-unpam {
+    width: 75%;
+    font-size: 1.7vh;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 3px;
+    padding: auto;
+}
+
+/* end-unpam */
+
+.vertical-line {
+    border-left: 0.25vh solid black;
+    border-top : none;
+    border-bottom: none;
+    border-right: none;
+    height: 5vh; 
+    margin-left: 8.4vh; 
+}
+
+.garis-kanan {
+    margin : 3vh
+}
+
+#content .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 65%;
+    gap: 1rem;
+}
+/* skill  */
+.container .content .skill {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .content .skill h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+    color: #7E1514;
+    margin-bottom: 1rem;
+}
+
+/* end-skill */
+
+/* experience */
+.container .content .pengalaman {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.container .content .pengalaman h1 {
+    font-size: 5vh;
+    color: #7E1514;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.list-pengalaman {
+    line-height: 5vh;
+}
+
+.dalem {
+    list-style: none;
+    font-style: italic;
+    margin-top: -0.7rem;
+}
+
+/* end-experience  */
+
+
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: wrap;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: #7E1514;
+    color: #E7DB00;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+footer p {
+    font-size: 2.5vh;
+    background-color: transparent;
+}
+/* End-Footer */

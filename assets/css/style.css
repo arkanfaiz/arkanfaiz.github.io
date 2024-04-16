@@ -1,0 +1,316 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #E2F4C5;
+}
+
+/* Navbar */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+}
+
+.navbar-container h1 {
+    font-size: 5vh;
+    color: #7E1514;
+}
+
+.navbar-container ul {
+    display: flex;
+    gap : 2rem;
+    justify-content: flex-end;
+}
+
+.navbar-container ul li {
+    list-style: none;
+    font-weight :normal;
+}
+
+.navbar-container ul li a {
+    font-size: 3vh;
+    color: #7E1514;
+    text-decoration: none;
+}
+
+.navbar-container ul li:hover{
+    font-size: 1rem;
+    transform: translateY(-4px);
+    color: #E7DB00;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navbar-container ul li a:hover{
+    color: #E7DB00;
+}
+
+/* End-Navbar */
+
+/* Start-Content */
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+main #content .image img {
+    width: 37vh;
+    height: auto;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+}
+
+.deskripsi {
+    text-align: center;
+    width: 110vh;
+    text-wrap: wrap;
+    margin: 0.5rem ;
+}
+
+.deskripsi h3 {
+    font-size: 3vh;
+    margin-top: 1.5rem;
+    color: #E7DB00;
+}
+
+.deskripsi h2 {
+    color: #7E1514;
+    font-size: 5vh;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.deskripsi p {
+    margin-top: 0.3rem;
+    line-height: 1.5rem;
+    padding-bottom: 2rem;
+    text-wrap: wrap;
+    font-size: 2.3vh;
+}
+
+.deskripsi button {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 30px 3px 30px 3px;
+    border: none;
+    background-color: #7E1514;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: -10px;
+    box-shadow: 0 0 10px #7E1514;
+}
+
+.deskripsi button a {
+    margin: auto;
+    text-decoration: none;
+    list-style: none;
+    color: #E7DB00;
+    background-color: #7E1514;
+}
+
+.deskripsi button:hover {
+    transform: translateY(-4px);
+    a {
+        color: #b6ae14;
+        background-color: #460c0b;
+    }
+    box-shadow: none;
+    background-color: #460c0b;
+}
+
+.kontak .social-icon{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.kontak .social-icon li a{
+    font-size: 5vh;
+    color: #7E1514;
+    display: flex;
+    transition: 0.5s;
+    padding: 0.5rem;
+}
+
+.kontak .social-icon li a:hover{
+    color: #E7DB00;
+    border-radius: 50%;
+    transform: translateY(-4px);
+}
+
+.kontak .social-icon li {
+     animation: shake 10s infinite;
+}
+
+/* Mendefinisikan animasi shake */
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* End-Content */
+
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: wrap;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: #7E1514;
+    color: #E7DB00;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+
+
+footer p {
+    margin-left: 2rem;
+    font-size: 2.5vh;
+    background-color: transparent;
+}
+
+/* End-Footer */
+
+@media screen and (max-width: 870px) {
+    #content {
+        width: 100%;
+    }
+
+    .deskripsi { 
+        width: 100%;
+        margin: auto;
+    }
+
+    .deskripsi h2 {
+        font-size: 1.7rem;
+    }
+
+    .deskripsi p {
+        margin-top: -0.6rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        width: 100%;
+    }
+
+    .navbar-container h1 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar-container nav ul {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navbar-container {
+        width: 100%;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    .deskripsi { 
+        width: 100%;
+        margin: auto;
+    }
+
+    .deskripsi h2 {
+        font-size: 1.7rem;
+    }
+
+    .deskripsi p {
+        font-size: 1rem;
+        margin-top: -0.6rem;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+    .navbar-container {
+        width: 100%;
+        display : flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    .deskripsi { 
+        width: 100%;
+        margin: auto;
+    }
+
+    .deskripsi h2 {
+        font-size: 1.7rem;
+    }
+
+    .deskripsi p {
+        font-size: 0.9rem;
+        margin-top: -0.6rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .navbar-container {
+        width: 100%;
+    }
+    .navbar-container ul li a.aboutme {
+        text-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+
+    footer {
+        padding: 0.7rem;
+    }
+    footer p{
+        font-size: 0.7rem;
+    }
+}
