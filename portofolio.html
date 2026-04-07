@@ -3,86 +3,159 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio</title>
+    <title>Portfolio — Arkan Faiz Mu'aafi</title>
     <link rel="stylesheet" href="assets/css/portofolio.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="fontawesome/css/all.min.css" />
   </head>
   <body>
     <header>
       <div class="navbar-container">
-        <h1>Arkan FM</h1>
+        <h1 class="logo">Arkan FM</h1>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="aboutme">About Me</a></li>
-            <li><a href="portofolio.html">Portofolio</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="portofolio.html" class="active">Portfolio</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <div class="card-project">
-        <div class="title">
-          <h1>My Project</h1>
-          <ion-icon
-            style="font-size: 2em; margin-top: 6px;"
-            name="layers"
-          ></ion-icon>
+      <div class="portfolio-container">
+        <div class="page-header">
+          <span class="page-label">// projects</span>
+          <h1>My Projects</h1>
+          <p class="page-sub">Things I've built — web apps, mobile apps, and more.</p>
+        </div>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="backend">Back-End</button>
         </div>
 
         <div class="card-wrapper">
-          <!-- card 1 -->
-          <div class="card">
-            <div class="card-caption">
-              <h4 class="card-title">Personal Website</h4>
-              <p class="card-text">My personal website</p>
+
+          <!-- Project 1: Personal Website -->
+          <div class="card" data-cat="web">
+            <div class="card-top">
+              <div class="card-icon web-icon">
+                <ion-icon name="globe-outline"></ion-icon>
+              </div>
+              <span class="card-status live">Live</span>
             </div>
-            <div class="icon-card">
-              <ion-icon class="logo-html" name="logo-html5"></ion-icon>
-              <ion-icon class="logo-css" name="logo-css3"></ion-icon>
+            <h3 class="card-title">Personal Website</h3>
+            <p class="card-text">A personal portfolio website showcasing projects, skills, and background. Built with semantic HTML and responsive CSS.</p>
+            <div class="card-tags">
+              <span class="tag html">HTML5</span>
+              <span class="tag css">CSS3</span>
+              <span class="tag js">JavaScript</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://arkanfaiz.github.io" target="_blank" class="btn-card">
+                <ion-icon name="open-outline"></ion-icon> Live
+              </a>
             </div>
           </div>
 
-          <!-- card 2 -->
-          <a
-            href="https://bmi-calculator-4qn0ph6ol-muhammadjalilasyakur.vercel.app/"
-          >
-            <div class="card">
-              <div class="card-caption">
-                <h4 class="card-title">BMI-Calculator</h4>
-                <p class="card-text">a project to measure a person's BMI</p>
+          <!-- Project 2: BMI Calculator -->
+          <a href="https://bmi-calculator-4qn0ph6ol-muhammadjalilasyakur.vercel.app/" target="_blank" class="card-link">
+            <div class="card" data-cat="web">
+              <div class="card-top">
+                <div class="card-icon calc-icon">
+                  <ion-icon name="calculator-outline"></ion-icon>
+                </div>
+                <span class="card-status live">Live</span>
               </div>
-              <div class="icon-card">
-                <ion-icon class="logo-js" name="logo-javascript"></ion-icon>
-                <ion-icon class="logo-html" name="logo-html5"></ion-icon>
-                <ion-icon class="logo-css" name="logo-css3"></ion-icon>
+              <h3 class="card-title">BMI Calculator</h3>
+              <p class="card-text">An interactive BMI calculator that computes Body Mass Index based on user input and provides health category feedback.</p>
+              <div class="card-tags">
+                <span class="tag js">JavaScript</span>
+                <span class="tag html">HTML5</span>
+                <span class="tag css">CSS3</span>
+              </div>
+              <div class="card-actions">
+                <span class="btn-card">
+                  <ion-icon name="open-outline"></ion-icon> Live
+                </span>
               </div>
             </div>
           </a>
+
+          <!-- Project 3: P3M Community App (Flutter) -->
+          <div class="card" data-cat="mobile">
+            <div class="card-top">
+              <div class="card-icon flutter-icon">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <span class="card-status wip">In Progress</span>
+            </div>
+            <h3 class="card-title">P3M Community App</h3>
+            <p class="card-text">A Flutter mobile application for the P3M community initiative, supporting social impact programs and local member coordination.</p>
+            <div class="card-tags">
+              <span class="tag dart">Flutter</span>
+              <span class="tag dart">Dart</span>
+              <span class="tag api">REST API</span>
+            </div>
+            <div class="card-actions">
+              <span class="btn-card disabled">In Progress</span>
+            </div>
+          </div>
+
+          <!-- Project 4: Back-End API (DBS Camp) -->
+          <div class="card" data-cat="backend">
+            <div class="card-top">
+              <div class="card-icon node-icon">
+                <ion-icon name="server-outline"></ion-icon>
+              </div>
+              <span class="card-status wip">In Progress</span>
+            </div>
+            <h3 class="card-title">RESTful API — DBS Camp</h3>
+            <p class="card-text">A back-end REST API project built during DBS Foundation Coding Camp 2024. Features CRUD operations, authentication, and MySQL database integration.</p>
+            <div class="card-tags">
+              <span class="tag js">Node.js</span>
+              <span class="tag api">Express</span>
+              <span class="tag db">MySQL</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/arkanfaiz" target="_blank" class="btn-card">
+                <ion-icon name="logo-github"></ion-icon> GitHub
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
     </main>
+
+    <footer>
+      <p>&copy;2026 Arkan Faiz Mu'aafi. All Rights Reserved.</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+      const btns = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.card[data-cat], .card-link');
+
+      btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          btns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.dataset.filter;
+
+          document.querySelectorAll('.card[data-cat]').forEach(card => {
+            const wrapper = card.closest('.card-link') || card;
+            const cat = card.dataset.cat;
+            wrapper.style.display = (filter === 'all' || cat === filter) ? '' : 'none';
+          });
+        });
+      });
+    </script>
   </body>
-
-  <footer>
-    <p style="font-weight: bold">
-      &#169;2024 Arkan Faiz Mu'aafi. All Rights Reserved.
-    </p>
-  </footer>
-
-  <script
-    type="module"
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-  ></script>
-  <script
-    nomodule
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-  ></script>
 </html>
