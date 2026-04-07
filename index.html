@@ -7,85 +7,90 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="fontawesome/css/all.min.css" />
   </head>
   <body>
     <header>
       <div class="navbar-container">
-        <h1>Arkan FM</h1>
+        <h1 class="logo">Arkan FM</h1>
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="aboutme">About Me</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
             <li><a href="portofolio.html">Portfolio</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
     <main>
       <div id="content">
         <div class="image">
+          <div class="image-ring"></div>
           <img src="assets/img/Flash.png" alt="Foto Profil" />
         </div>
+
         <div class="deskripsi">
-          <h3>Hello World!</h3>
-          <h2>I'm Arkan Faiz Mu'aafi</h2>
-          <p>
-            Information Systems graduate (GPA 3.49) with hands-on experience in
-            full-stack web development, mobile apps (Flutter), and UI/UX design.
-            Currently working at Soekarno-Hatta International Airport while
-            actively building tech solutions for social impact through the P3M
-            community initiative.
+          <p class="greeting">Hello World! <span class="cursor">_</span></p>
+          <h2>I'm <span class="name-highlight">Arkan Faiz Mu'aafi</span></h2>
+          <p class="role-tag">Information Systems Graduate &bull; Full-Stack Developer &bull; UI/UX</p>
+          <p class="bio">
+            Fresh graduate (GPA 3.49) with hands-on experience in full-stack web development,
+            mobile apps (Flutter), and UI/UX design. Currently working at Soekarno-Hatta
+            International Airport while actively building tech solutions for social impact
+            through the <strong>P3M</strong> community initiative.
           </p>
 
-          <!-- Skill badges -->
           <div class="skills-row">
             <span class="badge lang">Flutter</span>
             <span class="badge lang">Dart</span>
             <span class="badge lang">JavaScript</span>
+            <span class="badge lang">PHP</span>
             <span class="badge tech">Front-End Web</span>
-            <span class="badge tech">Back-End (AWS)</span>
-            <span class="badge tech">Network Admin</span>
+            <span class="badge tech">Back-End (Node.js)</span>
+            <span class="badge tech">AWS Cloud</span>
+            <span class="badge tech">REST API</span>
             <span class="badge tool">Figma</span>
             <span class="badge tool">UI/UX Design</span>
-            <span class="badge tool">WordPress</span>
+            <span class="badge tool">MySQL</span>
             <span class="badge tool">Agile Scrum</span>
           </div>
 
-          <div class="button">
-            <button>
-              <a href="assets/CV_Arkan_Faiz_-_5_Maret_2026.pdf" download>DOWNLOAD MY CV</a>
+          <div class="button-group">
+            <button class="btn-primary">
+              <a href="assets/CV_Arkan_Faiz_-_5_Maret_2026.pdf" download>Download CV</a>
+            </button>
+            <button class="btn-secondary">
+              <a href="portofolio.html">View Projects</a>
             </button>
           </div>
         </div>
+
         <div class="kontak">
-          <ul class="social-icon" id="social-icon">
-            <li id="iconOdd">
-              <a href="https://github.com/arkanfaiz">
+          <ul class="social-icon">
+            <li>
+              <a href="https://github.com/arkanfaiz" target="_blank" title="GitHub">
                 <ion-icon name="logo-github"></ion-icon>
               </a>
             </li>
-            <li id="iconEven">
-              <a href="https://www.instagram.com/arkanfaiz/">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-            <li id="iconOdd">
-              <a href="mailto:faizmuaafi@gmail.com">
-                <ion-icon name="mail-outline"></ion-icon>
-              </a>
-            </li>
-            <li id="iconEven">
-              <a href="https://www.linkedin.com/in/faizmuaafi">
+            <li>
+              <a href="https://www.linkedin.com/in/faizmuaafi" target="_blank" title="LinkedIn">
                 <ion-icon name="logo-linkedin"></ion-icon>
               </a>
             </li>
-            <li id="iconOdd">
-              <a href="https://arkanfaiz.github.io">
+            <li>
+              <a href="mailto:faizmuaafi@gmail.com" title="Email">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/arkanfaiz/" target="_blank" title="Instagram">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://arkanfaiz.github.io" target="_blank" title="Website">
                 <ion-icon name="globe-outline"></ion-icon>
               </a>
             </li>
@@ -93,12 +98,12 @@
         </div>
       </div>
     </main>
+
+    <footer>
+      <p>&copy;2026 Arkan Faiz Mu'aafi. All Rights Reserved.</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
-  <footer>
-    <p style="font-weight: bold">
-      &#169;2026 Arkan Faiz Mu'aafi. All Rights Reserved.
-    </p>
-  </footer>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
