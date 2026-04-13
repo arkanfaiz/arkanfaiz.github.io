@@ -129,7 +129,156 @@
             </div>
           </div>
 
+          <!-- Project 5: Budaya Langagedha -->
+          <a href="https://budayalangagedha.com/" target="_blank" class="card-link">
+            <div class="card" data-cat="web">
+              <div class="card-top">
+                <div class="card-icon budaya-icon">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                </div>
+                <span class="card-status live">Live</span>
+              </div>
+              <h3 class="card-title">Budaya Langagedha</h3>
+              <p class="card-text">A group project website built for Kemah Budaya, showcasing local cultural heritage and community activities. Developed collaboratively with a team.</p>
+              <div class="card-tags">
+                <span class="tag html">HTML5</span>
+                <span class="tag css">CSS3</span>
+                <span class="tag js">JavaScript</span>
+                <span class="tag group">Team Project</span>
+              </div>
+              <div class="card-actions">
+                <span class="btn-card">
+                  <ion-icon name="open-outline"></ion-icon> Visit Site
+                </span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 6: Bara Karsa NGO -->
+          <div class="card" data-cat="web">
+            <div class="card-top">
+              <div class="card-icon ngo-icon">
+                <ion-icon name="heart-outline"></ion-icon>
+              </div>
+              <span class="card-status offline">Domain Expired</span>
+            </div>
+            <h3 class="card-title">Bara Karsa — NGO Website</h3>
+            <p class="card-text">An official website for the Bara Karsa NGO organization. Covers organizational profile, programs, and community initiatives. Domain barakarsa.id is currently expired.</p>
+            <div class="card-tags">
+              <span class="tag wp">WordPress</span>
+              <span class="tag css">CSS3</span>
+              <span class="tag ngo-tag">NGO</span>
+            </div>
+            <div class="card-actions">
+              <span class="btn-card disabled">
+                <ion-icon name="globe-outline"></ion-icon> barakarsa.id
+              </span>
+            </div>
+          </div>
+
+          <!-- Project 7: InfiniTrack Flutter App -->
+          <div class="card card-featured" data-cat="mobile">
+            <div class="card-top">
+              <div class="card-icon infini-icon">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <span class="card-status completed">Completed</span>
+            </div>
+            <h3 class="card-title">InfiniTrack</h3>
+            <p class="card-text">A full-stack mobile tracking application built with Flutter + PHP back-end. Includes user authentication, database integration via MySQL, and a local web admin panel.</p>
+            <div class="card-tags">
+              <span class="tag dart">Flutter</span>
+              <span class="tag dart">Dart</span>
+              <span class="tag php">PHP</span>
+              <span class="tag db">MySQL</span>
+              <span class="tag api">REST API</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://drive.google.com/drive/folders/1Aby7u5rl_sJ1z-wAoez69O7mnq3XsU7U" target="_blank" class="btn-card">
+                <ion-icon name="cloud-download-outline"></ion-icon> Source Files
+              </a>
+              <button class="btn-card btn-guide" onclick="document.getElementById('infinitrack-modal').classList.add('open')">
+                <ion-icon name="document-text-outline"></ion-icon> Setup Guide
+              </button>
+            </div>
+          </div>
+
         </div>
+      </div>
+    </main>
+
+    <!-- InfiniTrack Setup Modal -->
+    <div class="modal-overlay" id="infinitrack-modal" onclick="if(event.target===this)this.classList.remove('open')">
+      <div class="modal">
+        <div class="modal-header">
+          <div>
+            <span class="modal-label">// setup guide</span>
+            <h2>InfiniTrack — Installation</h2>
+          </div>
+          <button class="modal-close" onclick="document.getElementById('infinitrack-modal').classList.remove('open')">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <div class="step">
+            <div class="step-num">01</div>
+            <div class="step-content">
+              <h4>Download Source Files</h4>
+              <p>Download all files from Google Drive: <code>infinitrack.rar</code>, <code>flutter_db.sql</code>, <code>PMFLUTTERAPP.rar</code></p>
+              <a href="https://drive.google.com/drive/folders/1Aby7u5rl_sJ1z-wAoez69O7mnq3XsU7U" target="_blank" class="step-link">
+                <ion-icon name="cloud-download-outline"></ion-icon> Open Google Drive
+              </a>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-content">
+              <h4>Import Database</h4>
+              <p>Open <strong>phpMyAdmin</strong>, create a new database named <code>flutter_db</code>, then import <code>flutter_db.sql</code>.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-content">
+              <h4>Setup Back-End (PHP)</h4>
+              <p>Extract <code>PMFLUTTERAPP.rar</code> and place it in:</p>
+              <code class="path">C:\xampp\htdocs\PMFLUTTERAPP\infinitrack\</code>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">04</div>
+            <div class="step-content">
+              <h4>Extract Flutter Project</h4>
+              <p>Extract <code>infinitrack.rar</code> to any folder, e.g. <code>C:\infinitrack\</code></p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">05</div>
+            <div class="step-content">
+              <h4>Build APK</h4>
+              <p>Open the <code>infinitrack</code> folder in VS Code, then run:</p>
+              <code class="cmd">flutter build apk --release</code>
+              <p class="step-note">APK output: <code>build/app/outputs/apk/release/InfiniTrack-v0.1.0.apk</code></p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">06</div>
+            <div class="step-content">
+              <h4>Access Web Panel</h4>
+              <p>Start XAMPP (Apache + MySQL), then open:</p>
+              <code class="path">http://localhost/PMFLUTTERAPP/infinitrack/login.php</code>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
       </div>
     </main>
 
